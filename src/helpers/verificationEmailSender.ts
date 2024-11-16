@@ -1,7 +1,7 @@
 import { resend } from "../lib/resend";
-import  VerificationEmail  from "@/app/emails/VerificationEmail";
+import  VerificationEmail  from "../app/emails/VerificationEmail";
 
-import {ApiResponse} from "@/app/src/types/ApiResponse";
+import {ApiResponse} from "../types/ApiResponse";
 
 export async function verificationEmailSender(email: string, otp: string,username:string) :Promise<ApiResponse> {
 

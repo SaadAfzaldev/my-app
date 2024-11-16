@@ -1,7 +1,7 @@
-import dbConnect from "@/app/src/lib/dbConnect";
-import UserModel from "@/app/src/models";
+import dbConnect from "../../../lib/dbConnect";
+import UserModel from "../../../models/index";
 import bcrypt from "bcryptjs";
-import { verificationEmailSender } from "../../../app/src/helpers/verificationEmailSender";
+import { verificationEmailSender } from "../../../helpers/verificationEmailSender";
 
 
 
