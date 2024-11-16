@@ -1,8 +1,8 @@
 import { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
-import User  from "../../../models/index";
-import dbConnect from "../../../lib/dbConnect";
+import User  from "../../../../models/index";
+import dbConnect from "../../../../lib/dbConnect";
 
 export const authOptions: NextAuthOptions = {
     providers: [
@@ -51,7 +51,7 @@ export const authOptions: NextAuthOptions = {
        
     ],
     pages: {
-        signIn: "sign-in",
+        signIn: "/sign-in",
         
     },
     session : {
@@ -84,4 +84,6 @@ export const authOptions: NextAuthOptions = {
          },
         
     }
+
+    
 }
