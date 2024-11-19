@@ -5,7 +5,7 @@ import { verificationEmailSender } from "../../../helpers/verificationEmailSende
 
 
 
-export default async function POST(req:Request,) {
+export async function POST(req:Request,) {
    
     await dbConnect();
 
